@@ -61,7 +61,7 @@ public class ContactsPageTest extends TestBase {
 	@Test
 	public void selectMultipleContactsTest() throws InterruptedException {
 		contactsPage.selectContactsByName("Joe Din");
-		contactsPage.selectContactsByName("Wanda Knowles");
+		contactsPage.selectContactsByName("Adam Ava");  //fails if contacts page!=1
 		Thread.sleep(3000); //just to see checked box by "name"
 	}
 	
