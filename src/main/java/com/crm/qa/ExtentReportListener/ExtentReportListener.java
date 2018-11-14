@@ -33,7 +33,8 @@ public class ExtentReportListener implements IReporter {
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, 
 			String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator 
-				+ "Extent" + System.currentTimeMillis() +".html", true);
+				+ "Extent.html", true);  //to run from GitHUB via Jenkins. Must indicate file name
+//				+ "Extent" + System.currentTimeMillis() +".html", true); //to run from local
 		
 		for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
